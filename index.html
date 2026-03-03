@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felices 15, Mi Amor! 🎂</title>
+    <style>
+        body {
+            background-color: #ffeef8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #5a5a5a;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 5px dashed #ffb7d5;
+        }
+        h1 { color: #ff4d94; font-size: 2.5em; }
+        .foto-placeholder {
+            width: 200px;
+            height: 200px;
+            background: #ffd1dc;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            border: 5px solid #ff4d94;
+        }
+        .mensaje { font-size: 1.2em; line-height: 1.6; }
+        .joke {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 15px;
+            font-style: italic;
+            margin: 20px 0;
+        }
+        button {
+            background: #ff4d94;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover { transform: scale(1.1); background: #ff1a75; }
+        #sorpresa { display: none; margin-top: 20px; font-weight: bold; color: #ff4d94; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>✨ ¡Felices 15, Princesa! ✨</h1>
+        
+        <div class="foto-placeholder">👑</div>
+
+        <p class="mensaje">
+           Lo siento por haber quitado la ubi, te prometo que ño lo volvere a hacer, solo que la sorpresa lo ameritaba... <br> 
+            <strong>Quiero toda una vida a tu lado bebita</strong>. ❤️
+        </p>
+
+        <div class="joke">
+             <p>Espero que disfrutes este regalo, tanto como yo lo disfrute haciendolo, pqqq shi fue idea mia, las bichas solo estaban de tapadera</p>
+           
+        </div>
+
+        <p>Sos la cumpleañera más hermosa, e inteligente ¡Te amo!</p>
+
+        <button onclick="revelar()">?</button>
+
+        <div id="sorpresa">
+            <p>🎁 Siempre estare para ti mi amor.</p>
+            <p>🎂🎉</p>
+        </div>
+    </div>
+
+    <script>
+        function revelar() {
+            document.getElementById('sorpresa').style.display = 'block';
+            alert("¡Alerta de ternura! Estás cumpliendo 15 y te ves espectacular 😍");
+        }
+    </script>
+
+</body>
+</html>
